@@ -1,0 +1,179 @@
+.kosarikon {
+    cursor: pointer;
+    font-size: 30px;
+    color: darkblue;
+    margin: 10px;
+}
+
+.kosarikon p {
+    padding: 10px;
+    float: left;
+}
+
+.itemsBox {
+    display: flex;
+}
+
+.item {
+    margin: 10px;
+    border: 1px solid black;
+}
+
+input{
+   font-size: 0.8rem; 
+   width: 5vw;
+   padding:0.3rem;
+}
+
+.kosarhoz{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #f0a00c;
+}
+
+/*cartBox- kosár tartalma, felugró ablak*/
+
+.cartBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease-in-out;
+    transform: scale(0);
+    z-index: 1000;
+}
+
+.cartBox.active {
+    transform: scale(1);
+}
+
+.cartBox .cart {
+    position: relative;
+    width: 50%;
+    max-height: 80vh;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../assets/img/lightbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cartBox .cart i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: auto;
+    background: #f00;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cartBox .cart i:hover {
+    background: #ff4d4d;
+}
+
+.cartBox .cart h1 {
+    font-size: 2rem;
+    color: #173350;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Táblázat stílusai */
+.kosar {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eedab5;
+    margin-bottom: 20px;
+}
+
+.kosar th {
+    background-color: #f0a00c;
+    color: #df5119;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+.kosar td {
+    padding: 10px;
+    border: 1px solid #1f1e1e;
+    text-align: center;
+}
+
+.kosar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: contain;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #eedab5;
+}
+
+.kosar a{
+    color: #df5119;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.kosar a:hover {
+    color: #8d320f;
+}
+@media (max-width: 1024px) {
+    .cartBox .cart {
+        width: 70%;
+    }
+
+    .kosar {
+        flex-direction: column;
+    }
+
+    .kosar img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Tablet eszközökre (max. 1024px szélesség) */
+@media (max-width: 767px) {
+    .cartBox .cart {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .kosar {
+        flex-direction: column;
+    }
+
+    .kosar img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .kosar th,
+    .kosar td {
+        font-size: 14px;
+    }
+}
+

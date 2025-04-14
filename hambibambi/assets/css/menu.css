@@ -1,0 +1,47 @@
+.insideNavbar {
+    background-color: #c5641f;
+    margin-top: 10px;
+}
+
+.insideNavbar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* A termékfajták egymás alá kerülnek */
+    gap: 40px;
+    padding: 20px;
+}
+
+legend {
+    text-align: center;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+main .container .cards {
+    flex: 1 1 calc(33.333% - 20px); /* Alapértelmezés szerint 3 oszlop */
+    max-width: calc(33.333% - 20px); /* Maximális szélesség 3 oszlophoz */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+

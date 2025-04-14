@@ -1,0 +1,159 @@
+/* Általános stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url(../../assets/img/lightbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #173350;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Flexbox elrendezés */
+.checkout {
+    display: flex; /* Flexbox elrendezés */
+    flex-direction: row; /* Az elemek egymás mellett helyezkednek el */
+    gap: 20px;
+    justify-content: space-between; /* Egyenletes elosztás */
+    align-items: flex-start;
+}
+
+/* Kosár tartalma */
+.cart-summary {
+    flex: 1;
+    background-color: #eedab5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-summary span{
+    margin-top: 20px;
+}
+
+.cart-items .total {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Számlázási adatok */
+.rendeles {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.rendeles h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.adatok {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #f0a00c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    transition: 0.3s;
+    background-color: #d87c00;
+}
+
+/* Reszponzív beállítások tablethez (max. 1024px szélesség) */
+@media (max-width: 1024px) {
+    .checkout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart-summary,
+    .rendeles {
+        width: 100%;
+    }
+}
+
+/* Reszponzív beállítások mobilhoz (max. 768px szélesség) */
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+
+    .cart-summary,
+    .rendeles {
+        padding: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 5px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

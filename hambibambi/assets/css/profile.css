@@ -1,0 +1,98 @@
+.profile_container{
+    justify-items: center;
+    align-items: center; 
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #333;
+}
+.user_details table{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #eedab5;
+}
+
+.user_details table .profile_data th{
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.user_details table .profile_data td{
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.user_details table .profile_buttons td{
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.user_details a{
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.user_details .update{
+    background-color: green;
+}
+
+.user_details .update:hover{
+    background-color: rgb(7, 79, 7);
+}
+
+.user_details .logout{
+    background-color: red;
+}
+
+.user_details .logout:hover{
+    background-color: rgb(165, 12, 12);
+}
+
+@media (max-width: 1200px) {
+    .profile_container {
+        padding: 10px;
+    }
+
+    .user_details table {
+        width: 100%;
+        margin: 50px 0;
+        scale: 1.2;
+    }
+
+    .user_details a {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Reszponzív beállítások 768px alatt (tablet) */   
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .user_details table {
+        padding: 10px;
+        scale: 1.2;
+    }
+
+    .user_details table .profile_data th,
+    .user_details table .profile_data td {
+        font-size: 12px;
+    }
+
+    .user_details a {
+        font-size: 12px; 
+        padding: 6px;
+    }
+}
