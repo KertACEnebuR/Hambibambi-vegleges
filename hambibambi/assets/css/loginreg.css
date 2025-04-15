@@ -50,11 +50,16 @@ body {
     font-size: 17px;
     color: #cf8a09;
 }
+
+.form .link a{
+    text-decoration: none;
+}
+
 /*A hivatkozások hover állapotát formázza, amikor a felhasználó az egérrel ráhúzza. Aláhúzást ad a hivatkozásnak.*/
 .form .link a:hover{
     text-decoration: underline;
 }
-
+    
 button {
     width: 100%;
     padding: 10px;

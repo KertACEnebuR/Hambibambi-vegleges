@@ -38,7 +38,3 @@ function sendLogin (e) {
   });    
 }
 
-if (!preg_match('/^36\d{9}$/', $phone_number)) {
-    alert("A telefonszám formátuma érvénytelen. A telefonszámnak 36-tal kell kezdődnie, és pontosan 11 számjegyből kell állnia.");
-    exit();
-}
