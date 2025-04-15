@@ -74,7 +74,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['full_name'], $_POST['e
         $stmt->execute();
 
         // Sikeres regisztráció után átirányítás
-        header("Location: loginregLogin.php");
+        echo "<script>
+        alert('Sikeres regisztráció!');
+        window.location.href = 'loginregLogin.php';
+        </script>";
         exit();
     }
 }

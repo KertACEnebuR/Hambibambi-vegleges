@@ -16,7 +16,7 @@
             <input type="password" name="password" placeholder="Jelszó" required>
         </div>
         <button type="submit">Bejelentkezés</button>
-        <div class="link">Ha még nincs regisztrációja: <a href="loginreg.php">Regisztráció</a></div>
+        <div class="link">Ha még nincs <a href="loginreg.php">regisztrációja</a></div>
     </form>
 </div>
 </div>

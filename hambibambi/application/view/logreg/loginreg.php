@@ -46,7 +46,7 @@
                 <input type="text" name="address" placeholder="Lakcím" required>
             </div>
             <button type="submit">Regisztráció</button>
-            <div class="link">Ha már van regisztrációja, lépjen be: <a href="loginregLogin.php">Belépés</a></div>
+            <div class="link">Ha már van regisztrációja, <a href="loginregLogin.php">lépjen be</a></div>
         </form>
 </div>
 </div>

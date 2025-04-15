@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Sikeres frissítés esetén átirányítás a profil oldalra
         echo "<script>
                 alert('Sikeres az adatok szerkesztése!');
-                window.location.href = 'profileUpdate.php';
+                window.location.href = 'profile.php';
             </script>";
         exit();
     } else {
@@ -236,11 +236,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 settlementDropdown.innerHTML += `<option value="${settlement.settlement_id}" ${isSelected ? 'selected' : ''}>${settlement.settlement_name}</option>`;
             });
         }
-    }
-
-    if (!preg_match('/^36\d{9}$/', $phone_number)) {
-    alert("A telefonszám formátuma érvénytelen. A telefonszámnak 36-tal kell kezdődnie, és pontosan 11 számjegyből kell állnia.");
-    exit();
     }
 </script>
 </body>
