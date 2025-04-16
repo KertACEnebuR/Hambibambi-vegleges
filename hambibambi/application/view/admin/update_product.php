@@ -41,12 +41,6 @@ $product_id = intval($_GET['id']);
         <label>Kép neve (pl. cezar_salata.jpg):</label>
         <input type="text" ng-model="product.picture" required>
 
-        <label>Kategória ID:</label>
-        <input type="number" ng-model="product.product_category_id" required>
-
-        <label>Mennyiségi egység ID:</label>
-        <input type="number" ng-model="product.quantity_unit_id" required>
-
         <button type="submit">⚙️ Módosítás</button>
         <button type="button" onclick="window.location.href='product_list.php'" class="dashboard-button">くくくVissza</button>
     </form>

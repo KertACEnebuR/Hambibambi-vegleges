@@ -36,8 +36,8 @@ switch ($request_method) {
         break;
     case 'DELETE':
         $data = json_decode(file_get_contents("php://input"), true);
-        if (isset($data['product_id'])) {
-            deleteProduct($data['product_id']);
+        if (isset($data['id'])) {
+            deleteProduct($data['id']);
         } else {
             echo json_encode(["error" => "Product ID is required"]);
         }

@@ -16,9 +16,7 @@ if (!empty($input['product_name']) && !empty($input['price']) && !empty($input['
     $stmt->bind_param("sissii", $input['product_name'], $input['price'], $input['description'], $input['picture'], $input['product_category_id'], $input['quantity_unit_id']);
 
     if ($stmt->execute()) {
-        echo json_encode(["message" => "Sikeres mentés!"]);
-    } else {
-        echo json_encode(["message" => "Hiba történt a mentés során."]);
+        echo json_encode(["message" => "Sikeres feltöltés!"]);
     }
 
     $stmt->close();

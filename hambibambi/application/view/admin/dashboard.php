@@ -24,7 +24,6 @@ $admin_user = isset($_SESSION['user']) ? $_SESSION['user'] : "Admin";
         <h1>Admin Panel</h1>
         <nav>
             <ul>
-                <li><a href="product_list.php">📦 Termékek kezelése</a></li>
                 <li><a href="logout.php">🚪 Kijelentkezés</a></li>
             </ul>
         </nav>

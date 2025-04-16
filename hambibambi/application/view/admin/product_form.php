@@ -61,7 +61,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     <script>
         let app = angular.module('productApp', []);
 
-        app.controller('ProductController', function ($scope, $http) {
+        app.controller('ProductController', function ($scope, $http, $window) { // $window injektálása
             $scope.product = {
                 product_name: "",
                 price: "",
@@ -77,12 +77,12 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
                     .then(function (response) {
                         alert(response.data.message); // Visszajelzés
                         $scope.product = {}; // Űrlap ürítése
-                        $window.location.href = "http://localhost/hambibambi/application/view/product_list.php"; 
+                        $window.location.href = "product_list.php";
                         // Átirányítás
                     })
                     .catch(function (error) {
                         console.error("Hiba történt:", error);
-                        alert("Hiba történt a mentés során.");
+                        alert("Hiba történt a feltöltés során.");
                     });
             };
         });
