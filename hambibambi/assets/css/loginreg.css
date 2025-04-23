@@ -44,20 +44,21 @@ body {
     font-size: 16px;
 }
 
-.form .link{
+.link{
     text-align: center;
     margin:10px 0;
-    font-size: 17px;
-    color: #cf8a09;
 }
 
-.form .link a{
+a{
     text-decoration: none;
+    color: #cf8a09;
+    font-weight: bold;
 }
 
-/*A hivatkozások hover állapotát formázza, amikor a felhasználó az egérrel ráhúzza. Aláhúzást ad a hivatkozásnak.*/
-.form .link a:hover{
-    text-decoration: underline;
+a:hover{
+    text-decoration: none;
+    color: #795718;
+    font-weight: bold;
 }
     
 button {
@@ -67,7 +68,6 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
     transition:  0.3s ease, 0.2s ease;
 }

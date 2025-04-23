@@ -103,21 +103,6 @@ form div input {
     display: none;
 }
 
-/* Jelszó toggle ikon */
-.field i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #aaa;
-    transition: color 0.3s;
-}
-
-.field i.active {
-    color: #007bff;
-}
-
 /* Mobilbarát elrendezés */
 @media (max-width: 768px) {
     .wrapper {

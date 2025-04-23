@@ -35,9 +35,9 @@ li {
     margin-bottom: 10px;
 }
 
-/* Flexbox elrendezés */
+
 .checkout {
-    display: flex; /* Flexbox elrendezés */
+    display: flex;
     flex-direction: row; /* Az elemek egymás mellett helyezkednek el */
     gap: 20px;
     justify-content: space-between; /* Egyenletes elosztás */
@@ -108,7 +108,7 @@ label {
     border-radius: 5px;
 }
 
-.submit-btn {
+.submit-btn, .vissza {
     background-color: #f0a00c;
     color: #fff;
     padding: 10px 20px;
@@ -118,7 +118,8 @@ label {
     font-size: 1rem;
 }
 
-.submit-btn:hover {
+
+.submit-btn:hover , .vissza:hover {
     transition: 0.3s;
     background-color: #d87c00;
 }

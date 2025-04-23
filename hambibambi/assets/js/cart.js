@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (!productCard) return;
 
-            let productId = productCard.getAttribute('data-id'); // A product_id értéke
+            let productId = productCard.getAttribute('data-id');
             let productName = productCard.querySelector('.card-title').innerText;
             let productPrice = parseInt(productCard.querySelector('.ar').innerText);
             let productQuantity = parseInt(productCard.querySelector('#quantity').value);
             let productImage = productCard.querySelector('img').src;
 
             let item = {
-                id: productId, // A product_id értéke kerül ide
+                id: productId,
                 name: productName,
                 price: productPrice,
                 quantity: productQuantity,
