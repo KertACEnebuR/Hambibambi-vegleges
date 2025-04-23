@@ -30,7 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'], $_POST['passw
         if (password_verify($password, $user['password'])) {
             // Bejelentkezés sikeres, munkamenet beállítása
             $_SESSION['user_id'] = $user['user_id'];
-            header("Location: ../../../index.php"); // Átirányítás a főoldalra
+            echo "<script>
+                    alert('Sikerkes bejelentkezés!');
+                    window.location.href = '../../../index.php';
+                </script>";
             exit();
         } else {
             $error = "Hibás email vagy jelszó!";

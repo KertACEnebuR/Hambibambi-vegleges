@@ -31,7 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['admin_username'] = $admin['username'];
 
                 // Sikeres bejelentkezés után irányítsuk át a dashboardra
-                header("Location: ../admin/dashboard.php");
+                echo "<script>
+                    alert('Sikeres bejelentkezés!');
+                    window.location.href = 'dashboard.php';
+                </script>";
                 exit;
             } else {
                 $error = "Hibás jelszó!";

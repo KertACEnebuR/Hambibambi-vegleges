@@ -109,6 +109,14 @@ function updateProduct($id, $data) {
 
 function deleteProduct($id) {
     global $conn;
+
+    // Töröljük a kapcsolódó rekordokat a baskets táblából
+    $sql = "DELETE FROM baskets WHERE product_id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+
+    // Ezután töröljük a terméket a products táblából
     $sql = "DELETE FROM products WHERE product_id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);

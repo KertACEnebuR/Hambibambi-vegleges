@@ -8,5 +8,8 @@ $_SESSION = [];
 session_destroy();
 
 // Visszairányítás a bejelentkezési oldalra
-header("Location: login.php");
+echo "<script>
+    alert('Sikeresen kijelentkezett!');
+    window.location.href = 'login.php';
+</script>";
 exit;

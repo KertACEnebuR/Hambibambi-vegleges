@@ -185,7 +185,8 @@ if ($result->num_rows > 0) {
                             <label><input type="radio" class="payment" name="payment" value="2" required> Bankkártya</label>
                             <label><input type="radio" class="payment" name="payment" value="3" required> SZÉP-kártya</label>
                         </div>
-                        <button type="submit" class="submit-btn">Rendelés véglegesítése</button>
+                        <input type="submit" class="submit-btn" value="Rendelés véglegesítése">
+                        <input type="submit" class="vissza" onclick="window.history.back()" value="<<< Vissza">
                     </form>
                 </div>
             </div>
