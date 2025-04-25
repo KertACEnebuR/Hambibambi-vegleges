@@ -5,7 +5,7 @@
 <div class="area2">
 <div class="login-form">
     <h2>Bejelentkezés</h2>
-    <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
+    <?php if (isset($error)) echo "<p style='color:red; margin: 10px 0;'>$error</p>"; ?>
     <form action="" method="POST">
         <div class="field input">
             <label for="email">Email:</label>

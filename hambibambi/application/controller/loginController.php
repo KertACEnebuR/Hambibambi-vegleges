@@ -5,7 +5,7 @@ include "../../../connect.php";
 
 // Ellenőrzi, hogy a felhasználó már be van-e jelentkezve
 if (isset($_SESSION['user_id'])) {
-    header("location: ./../loginregLogin.php");
+    header("location: loginregLogin.php");
     exit();
 }
 
